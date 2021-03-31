@@ -7,3 +7,5 @@ src/obj/
 src/bin/
 src/Services/Basket/Basket.API/bin/
 src/Services/Basket/Basket.API/obj/
+src/Services/Discount/Discount.Api/bin/
+src/Services/Discount/Discount.Api/obj/
