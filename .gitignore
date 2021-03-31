@@ -5,3 +5,5 @@ src/Services/Catalog/Catalog.API/obj/
 src/obj/Docker/CachedComposeConfigFilePaths.cache
 src/obj/
 src/bin/
+src/Services/Basket/Basket.API/bin/
+src/Services/Basket/Basket.API/obj/
