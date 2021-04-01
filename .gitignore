@@ -9,3 +9,5 @@ src/Services/Basket/Basket.API/bin/
 src/Services/Basket/Basket.API/obj/
 src/Services/Discount/Discount.Api/bin/
 src/Services/Discount/Discount.Api/obj/
+Discount/Discount.Grpc/bin/
+Discount/Discount.Grpc/obj/
