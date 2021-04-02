@@ -11,3 +11,5 @@ src/Services/Discount/Discount.Api/bin/
 src/Services/Discount/Discount.Api/obj/
 Discount/Discount.Grpc/bin/
 Discount/Discount.Grpc/obj/
+src/Services/Discount/Discount.Grpc/bin/
+src/Services/Discount/Discount.Grpc/obj/
