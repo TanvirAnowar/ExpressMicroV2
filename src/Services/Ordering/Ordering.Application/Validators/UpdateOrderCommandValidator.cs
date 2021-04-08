@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using FluentValidation;
-using Ordering.Application.Features.Orders.Commands.CheckoutOrder;
+﻿using FluentValidation;
+using Ordering.Application.Features.Orders.Commands.UpdateOrder;
 
-namespace Ordering.API.Validators
+namespace Ordering.Application.Validators
 {
-    public class CheckoutOrderCommandValidator : AbstractValidator<CheckoutOrderCommand>
+    public class UpdateOrderCommandValidator: AbstractValidator<UpdateOrderCommand>
     {
-        public CheckoutOrderCommandValidator()
+        public UpdateOrderCommandValidator()
         {
             RuleFor(p => p.UserName).NotEmpty()
                 .WithMessage("UserName can not be empty.")

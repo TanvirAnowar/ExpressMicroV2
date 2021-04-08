@@ -15,6 +15,8 @@ namespace Ordering.Application.Features.Orders.Commands.CheckoutOrder
     {
         private readonly IOrderRepository _orderRepository;
         private readonly IMapper _mapper;
+        private readonly IEmailService _emailService;
+        private readonly ILogger<CheckoutOrderCommandHandler> _logger;
 
         public CheckoutOrderCommandHandler(IOrderRepository orderRepository, IMapper mapper, IEmailService emailService, ILogger<CheckoutOrderCommandHandler> logger)
         {
@@ -24,8 +26,7 @@ namespace Ordering.Application.Features.Orders.Commands.CheckoutOrder
             _logger = logger;
         }
 
-        private readonly IEmailService _emailService;
-        private readonly ILogger<CheckoutOrderCommandHandler> _logger;
+        
         public async Task<int> Handle(CheckoutOrderCommand request, CancellationToken cancellationToken)
         {
             var orderEntity = _mapper.Map<Order>(request);

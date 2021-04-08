@@ -1,7 +1,6 @@
-﻿using System.Collections.Generic;
-using MediatR;
-using Ordering.Application.Contracts.Persistence;
+﻿using MediatR;
 using Ordering.Application.EntityDtos;
+using System.Collections.Generic;
 
 namespace Ordering.Application.Features.Orders.Queries.GetOrderList
 {
