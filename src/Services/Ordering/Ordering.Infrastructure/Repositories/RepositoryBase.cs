@@ -10,7 +10,7 @@ using Ordering.Infrastructure.Persistence;
 
 namespace Ordering.Infrastructure.Repositories
 {
-    public class RepositoryBase<T> : IAsynceRepository<T> where T : EntityBase
+    public class RepositoryBase<T> : IAsyncRepository<T> where T : EntityBase
     {
         protected readonly OrderContext _dbContext;
 

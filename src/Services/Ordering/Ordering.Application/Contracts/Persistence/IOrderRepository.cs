@@ -4,7 +4,7 @@ using Ordering.Domain.Entities;
 
 namespace Ordering.Application.Contracts.Persistence
 {
-    public interface IOrderRepository : IAsynceRepository<Order>
+    public interface IOrderRepository : IAsyncRepository<Order>
     {
         Task<IEnumerable<Order>> GetOrderByUserName(string userName);
     }
