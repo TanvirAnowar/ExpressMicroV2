@@ -21,3 +21,4 @@ src/Services/Ordering/Ordering.Domain/bin/
 src/Services/Ordering/Ordering.Domain/obj/
 src/Services/Ordering/Ordering.Infrastructure/bin/
 src/Services/Ordering/Ordering.Infrastructure/obj/
+src/Services/Ordering/Ordering.API/appsettings.Development.json
