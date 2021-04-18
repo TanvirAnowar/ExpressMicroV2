@@ -8,6 +8,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using System;
+using MassTransit;
 
 namespace Basket.API
 {
@@ -34,8 +35,15 @@ namespace Basket.API
             {
                 options.Configuration = Configuration.GetValue<string>("CachingSettings:ConnectionString");
             });
-            
 
+            services.AddMassTransit(config =>
+            {
+                config.UsingRabbitMq((context, configMq) =>
+                {
+                    configMq.Host(Configuration.GetValue<string>("MessageQueueUrl"));
+                });
+            });
+            services.AddMassTransitHostedService();
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
