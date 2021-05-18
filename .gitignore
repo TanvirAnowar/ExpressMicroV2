@@ -24,3 +24,5 @@ src/Services/Ordering/Ordering.Infrastructure/obj/
 src/Services/Ordering/Ordering.API/appsettings.Development.json
 src/BuildingBlocks/EventBus.Messages/bin/
 src/BuildingBlocks/EventBus.Messages/obj/
+src/ApiGateways/ApiGateways/bin/
+src/ApiGateways/ApiGateways/obj/
