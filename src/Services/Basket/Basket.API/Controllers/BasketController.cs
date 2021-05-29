@@ -80,7 +80,5 @@ namespace Basket.API.Controllers
             await _basketRepository.DeleteBasket(basketCheckout.UserName);
             return Accepted();
         }
-
-
     }
 }
